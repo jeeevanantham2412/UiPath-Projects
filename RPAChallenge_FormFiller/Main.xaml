@@ -1,0 +1,405 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:sd2="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.Semantic.Activities</x:String>
+      <x:String>System.Security</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.MetadataLoadContext</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>NPOI.Core</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="727,3379" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence sap:VirtualizedContainerService.HintSize="584,3356" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:String" Name="str_Email" />
+        <Variable x:TypeArguments="x:String" Name="str_Phone" />
+        <Variable x:TypeArguments="x:String" Name="str_Address" />
+        <Variable x:TypeArguments="x:String" Name="str_Role" />
+        <Variable x:TypeArguments="x:String" Name="str_Company" />
+        <Variable x:TypeArguments="x:String" Name="str_LastName" />
+        <Variable x:TypeArguments="x:String" Name="str_FirstName" />
+        <Variable x:TypeArguments="sd2:DataTable" Name="DT_input" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[DT_input]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="550,227" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Sheet1" WorkbookPath="C:\Users\YUVARAJ\Documents\UiPath\RPAChallenge_FormFiller\challenge.xlsx" />
+      <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="550,123" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[&quot;Total Rows &quot;+ DT_input.Rows.Count.ToString]" />
+      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Rpa Challenge" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="550,2923" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="f4b9a00e-97eb-4822-a2d1-5116ac556fd2" Version="V2">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="548,2729" sap2010:WorkflowViewState.IdRef="Sequence_3">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Start'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="514,194" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f4b9a00e-97eb-4822-a2d1-5116ac556fd2" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="rpachallenge.com" ContentHash="vZeWQIZdEkO4VjXdlodwtQ" DesignTimeRectangle="19, 682, 312, 54" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='BUTTON' aaname='Start' /&gt;" Guid="c9618be5-fcb3-4c63-9043-50995d07f61b" InformativeScreenshot="b9d202b402c86a4cacb484dfb25a582c.jpg" Reference="yLjFc0iry0uWO4ttGPk9rQ/dj1t2sA0aUmWIYWi8bpdtQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Rpa Challenge' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[DT_input]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="514,2475" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                <ui:ForEachRow.Body>
+                  <ActivityAction x:TypeArguments="sd2:DataRow">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="sd2:DataRow" Name="CurrentRow" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="512,2302" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="478,335" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+                        <ui:MultipleAssign.AssignOperations>
+                          <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
+                            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
+                              <ui:AssignOperation.To>
+                                <OutArgument x:TypeArguments="x:String">[str_FirstName]</OutArgument>
+                              </ui:AssignOperation.To>
+                              <ui:AssignOperation.Value>
+                                <InArgument x:TypeArguments="x:String">[CurrentRow("First Name").ToString]</InArgument>
+                              </ui:AssignOperation.Value>
+                            </ui:AssignOperation>
+                            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
+                              <ui:AssignOperation.To>
+                                <OutArgument x:TypeArguments="x:String">[str_LastName]</OutArgument>
+                              </ui:AssignOperation.To>
+                              <ui:AssignOperation.Value>
+                                <InArgument x:TypeArguments="x:String">[CurrentRow("Last Name ").ToString]</InArgument>
+                              </ui:AssignOperation.Value>
+                            </ui:AssignOperation>
+                            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
+                              <ui:AssignOperation.To>
+                                <OutArgument x:TypeArguments="x:String">[str_Company]</OutArgument>
+                              </ui:AssignOperation.To>
+                              <ui:AssignOperation.Value>
+                                <InArgument x:TypeArguments="x:String">[CurrentRow("Company Name").ToString]</InArgument>
+                              </ui:AssignOperation.Value>
+                            </ui:AssignOperation>
+                            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_4">
+                              <ui:AssignOperation.To>
+                                <OutArgument x:TypeArguments="x:String">[str_Role]</OutArgument>
+                              </ui:AssignOperation.To>
+                              <ui:AssignOperation.Value>
+                                <InArgument x:TypeArguments="x:String">[CurrentRow("Role in Company").ToString]</InArgument>
+                              </ui:AssignOperation.Value>
+                            </ui:AssignOperation>
+                            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_5">
+                              <ui:AssignOperation.To>
+                                <OutArgument x:TypeArguments="x:String">[str_Address]</OutArgument>
+                              </ui:AssignOperation.To>
+                              <ui:AssignOperation.Value>
+                                <InArgument x:TypeArguments="x:String">[CurrentRow("Address").ToString]</InArgument>
+                              </ui:AssignOperation.Value>
+                            </ui:AssignOperation>
+                            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_6">
+                              <ui:AssignOperation.To>
+                                <OutArgument x:TypeArguments="x:String">[str_Email]</OutArgument>
+                              </ui:AssignOperation.To>
+                              <ui:AssignOperation.Value>
+                                <InArgument x:TypeArguments="x:String">[CurrentRow("Email").ToString]</InArgument>
+                              </ui:AssignOperation.Value>
+                            </ui:AssignOperation>
+                            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_7">
+                              <ui:AssignOperation.To>
+                                <OutArgument x:TypeArguments="x:String">[str_Phone]</OutArgument>
+                              </ui:AssignOperation.To>
+                              <ui:AssignOperation.Value>
+                                <InArgument x:TypeArguments="x:String">[CurrentRow("Phone Number").ToString]</InArgument>
+                              </ui:AssignOperation.Value>
+                            </ui:AssignOperation>
+                          </scg:List>
+                        </ui:MultipleAssign.AssignOperations>
+                      </ui:MultipleAssign>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'First Name'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="478,246" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="SameAsCard" ScopeIdentifier="f4b9a00e-97eb-4822-a2d1-5116ac556fd2" Text="[str_FirstName]" Version="V5">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable BrowserURL="rpachallenge.com" ContentHash="gGSR7x-pxEy69M0KBFwsTA" DesignTimeRectangle="453, 345, 256, 46" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl name='j4u68' tag='INPUT' type='' class='ng-untouched ng-pristine ng-invalid' aaname='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="ea081d8e-4009-430f-850e-96a6d14940c8" InformativeScreenshot="de05d70fbf2bd890ac72f8586bad98e3.jpg" IsResponsive="True" Reference="yLjFc0iry0uWO4ttGPk9rQ/xYkw8faOk0m4KIrEc9rSDw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Rpa Challenge' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                <uix:Target DesignTimeRectangle="453, 326, 64, 17" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='First Name' tag='LABEL' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='First Name' /&gt;" Guid="0e8f0149-4231-4d31-8c9c-c68975c8c02a" SearchSteps="FuzzySelector" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NTypeInto.Target>
+                        <uix:NTypeInto.VerifyOptions>
+                          <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                            <uix:VerifyExecutionTypeIntoOptions.Retry>
+                              <InArgument x:TypeArguments="x:Boolean" />
+                            </uix:VerifyExecutionTypeIntoOptions.Retry>
+                            <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                              <InArgument x:TypeArguments="x:Double" />
+                            </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                          </uix:VerifyExecutionTypeIntoOptions>
+                        </uix:NTypeInto.VerifyOptions>
+                      </uix:NTypeInto>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Last Name'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="478,246" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="SameAsCard" ScopeIdentifier="f4b9a00e-97eb-4822-a2d1-5116ac556fd2" Text="[str_LastName]" Version="V5">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable BrowserURL="rpachallenge.com" ContentHash="UrwmCzA9b0yjGnympheDhw" DesignTimeRectangle="453, 522, 256, 46" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl name='I2mXV' tag='INPUT' type='' class='ng-untouched ng-pristine ng-invalid' aaname='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="dc28e5f1-c7c1-4464-906e-5b06769f3503" InformativeScreenshot="9394ee7bc539b103cac06fa4eef7f3f4.jpg" IsResponsive="True" Reference="yLjFc0iry0uWO4ttGPk9rQ/SVdeuvFjkE6LEQv4cxYBBQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Rpa Challenge' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                <uix:Target DesignTimeRectangle="453, 503, 64, 17" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Last Name' tag='LABEL' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Last Name' /&gt;" Guid="12b96391-34aa-4e58-b4b8-60cb80cdd3af" SearchSteps="FuzzySelector" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NTypeInto.Target>
+                        <uix:NTypeInto.VerifyOptions>
+                          <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                            <uix:VerifyExecutionTypeIntoOptions.Retry>
+                              <InArgument x:TypeArguments="x:Boolean" />
+                            </uix:VerifyExecutionTypeIntoOptions.Retry>
+                            <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                              <InArgument x:TypeArguments="x:Double" />
+                            </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                          </uix:VerifyExecutionTypeIntoOptions>
+                        </uix:NTypeInto.VerifyOptions>
+                      </uix:NTypeInto>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Company'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="478,246" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InteractionMode="SameAsCard" ScopeIdentifier="f4b9a00e-97eb-4822-a2d1-5116ac556fd2" Text="[str_Company]" Version="V5">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable BrowserURL="rpachallenge.com" ContentHash="ngUcybuhyEWh1BNAb5uUuQ" DesignTimeRectangle="732, 345, 256, 46" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl name='bk94b' tag='INPUT' type='' class='ng-untouched ng-pristine ng-invalid' aaname='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="d4e9cc7d-9dab-4eda-bd6d-fb15f8e7b84c" InformativeScreenshot="721c61970f3daf0ef87811997c635ed7.jpg" IsResponsive="True" Reference="yLjFc0iry0uWO4ttGPk9rQ/CYXJ5EHOjU2azUEsW_gsvQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Rpa Challenge' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target DesignTimeRectangle="732, 326, 99, 17" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Company Name' tag='LABEL' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Company Name' /&gt;" Guid="2aeaf74a-752f-4dcf-9819-5971a4c66643" SearchSteps="FuzzySelector" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NTypeInto.Target>
+                        <uix:NTypeInto.VerifyOptions>
+                          <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                            <uix:VerifyExecutionTypeIntoOptions.Retry>
+                              <InArgument x:TypeArguments="x:Boolean" />
+                            </uix:VerifyExecutionTypeIntoOptions.Retry>
+                            <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                              <InArgument x:TypeArguments="x:Double" />
+                            </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                          </uix:VerifyExecutionTypeIntoOptions>
+                        </uix:NTypeInto.VerifyOptions>
+                      </uix:NTypeInto>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Role in Company'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="478,246" sap2010:WorkflowViewState.IdRef="NTypeInto_4" InteractionMode="SameAsCard" ScopeIdentifier="f4b9a00e-97eb-4822-a2d1-5116ac556fd2" Text="[str_Role]" Version="V5">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable BrowserURL="rpachallenge.com" ContentHash="FD8dlu1GpUSZZ-U_h3zPGQ" DesignTimeRectangle="453, 257, 256, 46" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='' class='ng-untouched ng-pristine ng-invalid' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="309716ca-0b54-402f-a891-ed13ec46a080" InformativeScreenshot="be8197933a1c99e62105f7542b816106.jpg" IsResponsive="True" Reference="yLjFc0iry0uWO4ttGPk9rQ/nprJJ6zVmkiub6wrLy8IXQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Rpa Challenge' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                <uix:Target DesignTimeRectangle="453, 237, 103, 17" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='' aaname='Role in Company' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Role in Company' /&gt;" Guid="1d988d38-52b2-45f0-be9b-b1b27e24eaa8" SearchSteps="FuzzySelector" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NTypeInto.Target>
+                        <uix:NTypeInto.VerifyOptions>
+                          <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                            <uix:VerifyExecutionTypeIntoOptions.Retry>
+                              <InArgument x:TypeArguments="x:Boolean" />
+                            </uix:VerifyExecutionTypeIntoOptions.Retry>
+                            <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                              <InArgument x:TypeArguments="x:Double" />
+                            </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                          </uix:VerifyExecutionTypeIntoOptions>
+                        </uix:NTypeInto.VerifyOptions>
+                      </uix:NTypeInto>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Phone Number'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="478,246" sap2010:WorkflowViewState.IdRef="NTypeInto_5" InteractionMode="SameAsCard" ScopeIdentifier="f4b9a00e-97eb-4822-a2d1-5116ac556fd2" Text="[str_Phone]" Version="V5">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable BrowserURL="rpachallenge.com" ContentHash="RgO34HN15Eiv4mzX33s0YA" DesignTimeRectangle="732, 257, 256, 46" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl name='s5MHX' tag='INPUT' type='' class='ng-untouched ng-pristine ng-invalid' aaname='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="eddab177-1359-4079-85d0-ba344ae954fb" InformativeScreenshot="a9257b9bc1e97cf9e89155466815a5b6.jpg" IsResponsive="True" Reference="yLjFc0iry0uWO4ttGPk9rQ/8rlkAszuDkGF5-G9jFl9bg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Rpa Challenge' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                <uix:Target DesignTimeRectangle="732, 237, 89, 17" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Phone Number' tag='LABEL' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Phone Number' /&gt;" Guid="fa4bfe4b-17b0-48b8-a2b8-444f9ee6c7c7" SearchSteps="FuzzySelector" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NTypeInto.Target>
+                        <uix:NTypeInto.VerifyOptions>
+                          <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                            <uix:VerifyExecutionTypeIntoOptions.Retry>
+                              <InArgument x:TypeArguments="x:Boolean" />
+                            </uix:VerifyExecutionTypeIntoOptions.Retry>
+                            <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                              <InArgument x:TypeArguments="x:Double" />
+                            </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                          </uix:VerifyExecutionTypeIntoOptions>
+                        </uix:NTypeInto.VerifyOptions>
+                      </uix:NTypeInto>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Email'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="478,246" sap2010:WorkflowViewState.IdRef="NTypeInto_6" InteractionMode="SameAsCard" ScopeIdentifier="f4b9a00e-97eb-4822-a2d1-5116ac556fd2" Text="[str_Email]" Version="V5">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable BrowserURL="rpachallenge.com" ContentHash="Y5wzIR3dG0GWr7MnZJ5ukQ" DesignTimeRectangle="453, 434, 256, 46" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='Iet90' tag='INPUT' type='' class='ng-untouched ng-pristine ng-invalid' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="4f2a906a-60e0-4406-9616-8c5a000cab3c" InformativeScreenshot="b73c03b8cf4ba32ffda09ee01abd80ee.jpg" IsResponsive="True" Reference="yLjFc0iry0uWO4ttGPk9rQ/jKzefhcao0GXJzzOC_wwcA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Rpa Challenge' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                <uix:Target DesignTimeRectangle="453, 414, 33, 17" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Email' tag='LABEL' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Email' /&gt;" Guid="a7256caa-a318-4046-baf6-c4dd6a533fa7" SearchSteps="FuzzySelector" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NTypeInto.Target>
+                        <uix:NTypeInto.VerifyOptions>
+                          <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                            <uix:VerifyExecutionTypeIntoOptions.Retry>
+                              <InArgument x:TypeArguments="x:Boolean" />
+                            </uix:VerifyExecutionTypeIntoOptions.Retry>
+                            <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                              <InArgument x:TypeArguments="x:Double" />
+                            </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                          </uix:VerifyExecutionTypeIntoOptions>
+                        </uix:NTypeInto.VerifyOptions>
+                      </uix:NTypeInto>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Address'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="478,246" sap2010:WorkflowViewState.IdRef="NTypeInto_7" InteractionMode="SameAsCard" ScopeIdentifier="f4b9a00e-97eb-4822-a2d1-5116ac556fd2" Text="[str_Address]" Version="V5">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable BrowserURL="rpachallenge.com" ContentHash="CINV_cuKKUu6mWvL55Il0A" DesignTimeRectangle="732, 434, 256, 46" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl name='5sgTS' tag='INPUT' type='' class='ng-untouched ng-pristine ng-invalid' aaname='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="2cf1295a-268a-4099-a464-c10cece833f5" InformativeScreenshot="e087fa665519549f67147775c0c3f62d.jpg" IsResponsive="True" Reference="yLjFc0iry0uWO4ttGPk9rQ/1InXNS1jGUO5UX6bGWUwSg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Rpa Challenge' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                <uix:Target DesignTimeRectangle="732, 414, 48, 17" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Address' tag='LABEL' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Address' /&gt;" Guid="5598ade6-de4a-46fa-ae46-26f928453e41" SearchSteps="FuzzySelector" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NTypeInto.Target>
+                        <uix:NTypeInto.VerifyOptions>
+                          <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                            <uix:VerifyExecutionTypeIntoOptions.Retry>
+                              <InArgument x:TypeArguments="x:Boolean" />
+                            </uix:VerifyExecutionTypeIntoOptions.Retry>
+                            <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                              <InArgument x:TypeArguments="x:Double" />
+                            </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                          </uix:VerifyExecutionTypeIntoOptions>
+                        </uix:NTypeInto.VerifyOptions>
+                      </uix:NTypeInto>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Submit'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="478,185" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f4b9a00e-97eb-4822-a2d1-5116ac556fd2" Version="V5">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="rpachallenge.com" ContentHash="QNJfKFDJdUmGeY2kZLVJeQ" DesignTimeRectangle="442, 588, 116, 36" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='INPUT' type='submit' /&gt;" Guid="137e4fc3-e6c9-4e11-bfc5-57cc513e83e8" InformativeScreenshot="9912f76e9d75840ee6117946b0fac71d.jpg" Reference="yLjFc0iry0uWO4ttGPk9rQ/5_2rOQ4_JEeg3xF3AnY36g" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Rpa Challenge' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                    </Sequence>
+                  </ActivityAction>
+                </ui:ForEachRow.Body>
+              </ui:ForEachRow>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.OCREngine>
+          <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+            <ActivityFunc.Argument>
+              <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+            </ActivityFunc.Argument>
+          </ActivityFunc>
+        </uix:NApplicationCard.OCREngine>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="-8, -8, 1382, 744" BrowserType="Chrome" ContentHash="mRDexj7m4U6SKKvZeums-Q" IconBase64="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" InformativeScreenshot="a31d28c09d1da427fe0a454790e61881.jpg" Reference="yLjFc0iry0uWO4ttGPk9rQ/EO_XZY1hs0KapiJt-T_eTQ" Selector="&lt;html app='chrome.exe' title='Rpa Challenge' /&gt;" Url="https://www.rpachallenge.com" Version="V2">
+            <uix:TargetApp.Arguments>
+              <InArgument x:TypeArguments="x:String" />
+            </uix:TargetApp.Arguments>
+            <uix:TargetApp.WorkingDirectory>
+              <InArgument x:TypeArguments="x:String" />
+            </uix:TargetApp.WorkingDirectory>
+          </uix:TargetApp>
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+    </Sequence>
+  </Sequence>
+</Activity>
